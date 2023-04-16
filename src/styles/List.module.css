@@ -21,6 +21,10 @@
     font-family: RobotoBoldItalic;
     font-size: 21px;
     color: #EF767a;
+    
+}
+.text a{
+    text-decoration: none;
 }
 .text p{
     width: 363px;

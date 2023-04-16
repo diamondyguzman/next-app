@@ -1,5 +1,6 @@
 import React from 'react';
 import ListStyles from '../styles/List.module.css';
+import Link from 'next/link';
 
 function List({children}){
     
@@ -12,18 +13,27 @@ function List({children}){
     )
 }
 
-export function ListItem({image,header,text}){
+export function ListItem({image,header,text, href}){
+    if (href){
+        return(
+            <>
+                <div className={ListStyles.item}>
+                    <Link  href={href} className={ListStyles.image}>
+                            <img src={image}></img>
+                    </Link>
+                    <div className={ListStyles.text}>
+                        <Link  href={href}>
+                            <h4>{header} :</h4>    
+                        </Link>
+                        <p >{text}</p>
+                    </div>
+                </div>
+            </>
+        )
+    }
     return (
         <>
-            <div className={ListStyles.item}>
-                <div className={ListStyles.image}>
-                        <img src={image}></img>
-                </div>
-                <div className={ListStyles.text}>
-                    <h4>{header} :</h4>
-                    <p >{text}</p>
-                </div>
-            </div>
+           
         </>
     )
 }
