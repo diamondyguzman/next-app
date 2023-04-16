@@ -1,0 +1,10 @@
+.footer{
+    height:75px;
+    padding: 24px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: RobotoLight;
+    margin-top: 250px;
+}
