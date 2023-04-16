@@ -1,6 +1,6 @@
 import React from 'react';
 import List, { ListItem } from '../components/List';
-import {products} from './products/_productData';
+import {products} from '../data/productData';
 
 export default function ProductsPage(){
 
