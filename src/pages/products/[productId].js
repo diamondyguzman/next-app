@@ -1,7 +1,7 @@
 import React from 'react';
 import {products} from '../../data/productData';
 import {useRouter} from 'next/router';
-
+import DetailStyles from '../../styles/Details.module.css';
 export default function ProductViewPage(){
     const router = useRouter();
     const {productId} = router.query;
@@ -18,9 +18,15 @@ export default function ProductViewPage(){
 
     return(
         <>
-            <h1>{currentProduct.name}</h1>
-            <p>{currentProduct.description}</p>
-            <img src={`/images/${currentProduct.image}`}/>
+            <div className={DetailStyles.detailInfo}>
+                <img  src={`/images/${currentProduct.image}`}/>
+           
+                <div className={DetailStyles.desc}>
+                    <h1>{currentProduct.name}</h1>
+
+                    <p>{currentProduct.description}</p>
+                </div>
+            </div>
         </>
     )
 }

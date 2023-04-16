@@ -1,0 +1,23 @@
+.detailInfo{
+    margin: 40px auto;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+.detailInfo img {
+    width:305px ;
+    height: 305px;
+    object-fit: cover;
+}
+.desc{
+    width: 364px;
+}
+.desc h1{
+    font-family: RobotoBoldItalic;
+    font-size: 21px;
+    color: #EF767a;
+}
+.desc p{
+    font-family: LoraItalic;
+    font-size: 18px;
+}
