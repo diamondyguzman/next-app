@@ -46,12 +46,20 @@ export default function App({ Component, pageProps }) {
     <Component {...pageProps} />
 
     <footer className={FooterStyles.footer}>
-      <div>©The Soap Factory</div>
+      <div>
+
+        <Modal trigger=' ©The Soap Factory'>
+         Developed by Diamond Guzman for the people of IUPUI and to be utilized correctly for project purposes only in 2023.
+        </Modal>
+        
+      </div>
+
       <div>
        
         <Modal trigger='Terms and Conditions'>
           Long List of terms and Conditions
         </Modal>
+
       </div>
     </footer>
   </>
